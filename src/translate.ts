@@ -92,7 +92,7 @@ class Translator {
         query_dat.append("key", this.api_key);
 
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://translation.googleapis.com/language/translate/v2?key="+this.api_key, false);
+        xhr.open("POST", "https://translation.googleapis.com/language/translate/v2", false);
         xhr.send(query_dat);
 
         if (xhr.status == 200) {
@@ -124,7 +124,7 @@ class Translator {
         query_dat.append("key", this.api_key);
 
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://translation.googleapis.com/language/translate/v2/detect?key="+this.api_key, false);
+        xhr.open("POST", "https://translation.googleapis.com/language/translate/v2/detect", false);
         xhr.send(query_dat);
 
         if (xhr.status == 200) {
@@ -146,7 +146,7 @@ class Translator {
         query_dat.append("key", this.api_key);
 
         let xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://translation.googleapis.com/language/translate/v2/languages?key="+this.api_key, false);
+        xhr.open("GET", "https://translation.googleapis.com/language/translate/v2/languages", false);
         xhr.send(query_dat);
 
         if (xhr.status == 200) {
