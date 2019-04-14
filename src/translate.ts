@@ -1,3 +1,12 @@
+/*!
+ * HiddenTranslator JavaScript Library v0.1.0
+ * https://github.com/citorva/HiddenTranslator/
+ *
+ * Copyright Citorva
+ * Released under the GNU GPL v3 License
+ *
+ * Date: 2019-04-14T16:57Z
+ */
 class Translator {
     api_key : string;
 
