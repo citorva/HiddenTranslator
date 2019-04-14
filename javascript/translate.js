@@ -66,7 +66,7 @@ var Translator = /** @class */ (function () {
         query_dat.append("q", text);
         query_dat.append("key", this.api_key);
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://translation.googleapis.com/language/translate/v2/detect?key=" + this.api_key, false);
+        xhr.open("POST", "https://translation.googleapis.com/language/translate/v2/detect", false);
         xhr.send(query_dat);
         if (xhr.status == 200) {
             var dat = JSON.parse(xhr.responseText);
@@ -85,7 +85,7 @@ var Translator = /** @class */ (function () {
         var query_dat = new FormData();
         query_dat.append("key", this.api_key);
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://translation.googleapis.com/language/translate/v2/languages?key=" + this.api_key, false);
+        xhr.open("GET", "https://translation.googleapis.com/language/translate/v2/languages", false);
         xhr.send(query_dat);
         if (xhr.status == 200) {
             var dat = JSON.parse(xhr.responseText);
@@ -111,7 +111,7 @@ var Translator = /** @class */ (function () {
         query_dat.append("source", from);
         query_dat.append("key", this.api_key);
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://translation.googleapis.com/language/translate/v2?key=" + this.api_key, false);
+        xhr.open("POST", "https://translation.googleapis.com/language/translate/v2", false);
         xhr.send(query_dat);
         if (xhr.status == 200) {
             var data = JSON.parse(xhr.responseText);
