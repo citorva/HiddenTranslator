@@ -28,10 +28,7 @@ class Translator {
     }
 
     private static replace_text_by_map(dat : Map<string, string>) {
-        dat.forEach((val, key) => {
-            document.body.innerText = document.body.innerText.replace(key, val);
-        });
-        /*function recursive_replace (dom_element : ChildNode,
+        function recursive_replace (dom_element : ChildNode,
                                     dat : Map<string, string>) {
             let childrens = dom_element.childNodes;
 
@@ -45,7 +42,7 @@ class Translator {
             });
         }
 
-        recursive_replace(document.body, dat);*/
+        recursive_replace(document.body, dat);
     }
 
     private static to_string(dat : Array<string>) {
