@@ -25,7 +25,7 @@ This example uses the file `hiddenTr.min.js` located at `javascript`. It automat
 
 # Security issue
 
-This script requires a google api key used to manage google service usage and service shipping. The use of google service is not free and this key is private. As a consequence, an intermediate service hosted on your server is needed and the code needs to be suited to prevent any issues.
+This script requires a google api key used to manage google service usage and service shipping. The use of google service is not free and this key is private. As a consequence, you need to limit the code usage for your site.
 
 # Documentation
 
