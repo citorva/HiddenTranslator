@@ -24,7 +24,7 @@ This example uses the file `hiddenTr.min.js` located at `javascript`. It automat
 </html>
 ```
 
-# 
+# Security issues
 
 This script requires a Google API key used to manage Google service usage and service shipping. The use of google service is not free and this key is private. To prevent any inconveniences, read the `Securing an API key` in the API key documentation or follow this [link](https://cloud.google.com/docs/authentication/api-keys#securing_an_api_key).
 
